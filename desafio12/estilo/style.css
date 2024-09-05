@@ -1,12 +1,24 @@
 @charset "UTF-8";
-section > pre {
-  white-space: pre-line;
+
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap");
+
+:root {
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: "Passion One", cursive;
+  --fonte3: "Sriracha", cursive;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
 }
 
 html,
 body {
-  min-width: 100vh;
   background-color: darkgray;
+  font-family: var(--fonte1);
 }
 
 header {
@@ -18,47 +30,55 @@ header {
 header > h1 {
   padding-top: 50px;
   font-variant: small-caps;
+  font-family: var(--fonte2);
+  font-size: 7vw;
 }
 
 header > p {
   padding-bottom: 50px;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
+header a,
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+header a:hover,
+footer a:hover {
+  text-decoration: underline;
 }
 
 section {
+  font-family: var(--fonte3);
   padding-top: 10vh;
   padding-bottom: 10vh;
   line-height: 2em;
   padding-left: 30px;
+  font-size: 3.2vw;
 }
 
 section.normal {
   background-color: white;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 section.imagem {
-  background-color: rgb(62, 62, 62);
+  background-color: rgba(0, 0, 0, 0.34);
   color: white;
 }
 
+section.imagem > p {
+  padding: 8px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.209);
+}
 a {
   color: white;
   text-decoration: none;
   font-weight: bolder;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 footer {
-  color: white;
   text-align: center;
-  background-color: black;
-  padding: 10px;
 }
