@@ -2,3 +2,63 @@
 section > pre {
   white-space: pre-line;
 }
+
+html,
+body {
+  min-width: 100vh;
+  background-color: darkgray;
+}
+
+header {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+}
+
+header > p {
+  padding-bottom: 50px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+}
+
+section.imagem {
+  background-color: rgb(62, 62, 62);
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+}
