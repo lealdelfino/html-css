@@ -10,21 +10,20 @@
       }
 
       table {
-        width: 500px;
+        width: 400px;
+        height: 400px;
         border-collapse: collapse;
-      }
-
-      tr.linha {
-        background-color: red;
       }
 
       td {
         padding: 6px;
         border: 1px solid black;
+        text-align: center; /* Alinhamento horizontal */
+        vertical-align: middle; /* Alinhamento vertical */
       }
 
-      td.dado {
-        background-color: green;
+      .numero {
+        text-align: right;
       }
     </style>
   </head>
@@ -38,15 +37,15 @@
            4 TABLE DATA = dado de tabela
     -->
     <table>
-      <!--ESSE COMANDO CRIA VÁRIAS DE UMA VEZ tr*4>td*3-->
+      <!--ASTERISCO CRIA VÁRIAS DE UMA VEZ *** tr*4>td*3-->
       <tr>
         <!--Primeira linha-->
-        <td>A1</td>
+        <td class="numero">A1</td>
         <td>B1</td>
         <td>C1</td>
       </tr>
       <tr>
-        <td>A2</td>
+        <td class="numero">A2</td>
         <td>B2</td>
         <td>C2</td>
       </tr>
